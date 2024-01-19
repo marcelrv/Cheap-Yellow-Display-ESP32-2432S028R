@@ -13,6 +13,8 @@ The dependencies are automatically resolved via [PlatformIO](https://platformio.
 	adafruit/Adafruit ILI9341@^1.6.0
 	https://github.com/PaulStoffregen/XPT2046_Touchscreen.git
 
+Note: use the latest version of the XPT2046_Touchscreen library, the build-in version in PlatformIO is long outdated.
+
 
 ## How to get the XPT2046 and ILI9341 working
 Key elements to get it working:
