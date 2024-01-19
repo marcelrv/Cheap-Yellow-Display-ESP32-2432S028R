@@ -1,9 +1,9 @@
 # Cheap Yellow Display Example
 
-This project is [PlatformIO](https://platformio.org/) project with a modified version of the test program(s) for the Adafruit ILI9341 & touch library
+This project is a [PlatformIO](https://platformio.org/) project with a modified version of the test program(s) for the Adafruit ILI9341 & touch library
 applied to the ESP32-2432S028R board aka Cheap Yellow Display / CYD.
 
-Sharing this as I had some initial hurdles getting this board to run with standard libraries
+Sharing this as I had some initial hurdles getting this board to run with thse standard libraries
 
 ## Dependencies
 
@@ -30,7 +30,7 @@ Initializes the touchscreen while passing the SPI Class:
 
 `Adafruit_ILI9341 tft = Adafruit_ILI9341(&hspi, TFT_DC, TFT_CS, TFT_RST);`
 
-Setup the VSPI to use custom pins for the touch:
+Setup the VSPI to use custom pins for the touch and pass it in the tf.begin():
   
 ```
 vspi.begin(XPT2046_CLK, XPT2046_MISO, XPT2046_MOSI, XPT2046_CS);
