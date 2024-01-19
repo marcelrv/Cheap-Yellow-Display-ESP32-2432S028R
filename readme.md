@@ -1,6 +1,6 @@
-# Intro
+# Cheap Yellow Display Example
 
-This project is a platformio version of the test program(s) for the Adafruit ILI9341 library
+This project is [PlatformIO](https://platformio.org/) project with a modified version of the test program(s) for the Adafruit ILI9341 & touch library
 applied to the ESP32-2432S028R board aka Cheap Yellow Display / CYD.
 
 Sharing this as I had some initial hurdles getting this board to run with standard libraries
@@ -22,10 +22,9 @@ Use 2 SPI classes:
 ```
 SPIClass hspi = SPIClass(HSPI);
 SPIClass vspi = SPIClass(VSPI);
-
 ```
 
-Initializes the touchscreen while passing the spiClass:
+Initializes the touchscreen while passing the SPI Class:
 
 `Adafruit_ILI9341 tft = Adafruit_ILI9341(&hspi, TFT_DC, TFT_CS, TFT_RST);`
 
@@ -42,6 +41,7 @@ There is a range of small development boards, together with screen and touch sen
 ESP32-2432S028R is one variant of the family.
 
 Specifications:
+
 2.8" ESP32 Module ESP32-2432S028R
 
 WiFi+BT Dual-core
