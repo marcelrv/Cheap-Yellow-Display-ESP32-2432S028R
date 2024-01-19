@@ -29,8 +29,8 @@
 SPIClass hspi = SPIClass(HSPI);
 SPIClass vspi = SPIClass(VSPI);
 
-// XPT2046_Touchscreen ts(XPT2046_CS,XPT2046_IRQ);
-XPT2046_Touchscreen ts(XPT2046_CS);
+XPT2046_Touchscreen ts(XPT2046_CS,XPT2046_IRQ);
+// XPT2046_Touchscreen ts(XPT2046_CS); //also works, but then the IRQ is not used
 Adafruit_ILI9341 tft = Adafruit_ILI9341(&hspi, TFT_DC, TFT_CS, TFT_RST);
 
 unsigned long testLines(uint16_t color)
