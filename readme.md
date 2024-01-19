@@ -1,7 +1,7 @@
 # Cheap Yellow Display Example
 
 This project is a [PlatformIO](https://platformio.org/) project with a modified version of the test program(s) for the Adafruit ILI9341 & touch library
-applied to the ESP32-2432S028R board aka Cheap Yellow Display / CYD.
+applied to the Sutton Smar Display ESP32-2432S028R board aka Cheap Yellow Display / CYD.
 
 Sharing this as I had some initial hurdles getting this board to run with thse standard libraries
 
@@ -56,6 +56,8 @@ Case used in the images:
 https://www.printables.com/model/726960-sunton-esp32-2432s028r-cheap-yellow-display-back-p
 
 To use the display with [LVGL](https://lvgl.io/) drivers see https://github.com/rzeldent/esp32-smartdisplay.
+
+Fould also https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display which has lot of usefull code for these displays
 
 ![Touch me](./img/touchme.jpg) ![Touc](./img/touch.jpg)
 
